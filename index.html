@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+	<!--External CSS-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>Library Management System</header>
+<!--Container having two(Input and Output)-->
+<div class="container">
+<div class="box1"> <!--Input-->
+<form action="#" method="post" id="form1" name="formmm" onsubmit="return formValidation()">
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname" placeholder="Xyz"><br><br>
+<small id="ferror"></small><br>
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="lname" placeholder="Xyz"><br><br>
+<small id="lerror"></small><br>
+
+<label for="email">Email:</label>
+<input type="email" id="emailid" name="emailid" placeholder="xyz@gmail.com"><br><br>
+<small id="mailerror"></small><br>
+
+<label for="phnum">Phone-<br>Number:</label>
+<input type="tel" id="phnum" name="phnum" placeholder="76812-23456"><br><br>
+<small id="numerror"></small><br>
+
+<label for="message" id="addre">Address:</label>
+<textarea name="message" rows="4" cols="56" placeholder="Mullana(Ambala)" name="addr" id="addr"></textarea><br><br>
+<small id="adderror"></small><br>
+
+<label for="courses">Class:</label>
+ <select id="courses" name="courses" name="courses">
+    <option value="12th">12th</option>
+    <option value="10th">10th</option>
+    <option value="9th">9th</option>
+    <option value="8th">8th</option>
+  </select><br><br>
+  
+<label for="subjects">Books Taken:</label>
+<input type="checkbox" class="sub" id="subject1" value="Hindi">
+<label for="subject1" class="sub">Hindi</label>
+<input type="checkbox" class="sub" id="subject2" value="English">
+<label for="subject2" class="sub">English</label>
+<input type="checkbox" class="sub" id="subject3" value="SST">
+<label for="subject3" class="sub">SST</label>
+<input type="checkbox" class="sub" id="subject4" value="Science">
+<label for="subject4" class="sub">Science</label>
+<input type="checkbox" class="sub" id="subject5" value="Maths">
+<label for="subject5" class="sub">Maths</label><br><br>
+<small id="suberror"></small><br>
+
+<label for="time">Time Period:</label>
+ <select id="time" name="time" name="time">
+    <option value="1day">1day</option>
+    <option value="2days">2days</option>
+    <option value="4days">4days</option>
+    <option value="7days">7days</option>
+  </select><br><br>
+  
+<label for="subdate">Submission Date:</label>
+<input type="date" id="subdate" name="subdate"><br><br>
+<small id="dateerror"></small><br>
+<input type="submit" value="Submit"> 
+</form>  <!--End of Form-->
+</div>   <!--End of Input Form-->
+ <div class="output">   <!--Output-table-->
+            <table id="info">
+                <tr>
+                    <td class="heading"><label for="">Submitted Information</label></td>
+                </tr>
+                <tr>
+                    <td><label>First Name: <span id="firstn"></span></label></td>
+                </tr>
+                <tr>
+                    <td><label >Last Name:  <span id="lastn"></span></label></td>
+                </tr>
+                <tr>
+                    <td><label>Email: <span id="rightmail"></span></label></td>
+                </tr>
+                <tr>
+                    <td><label>Phone: <span id="rightnum"></span></label></td>
+                </tr>
+                <tr>
+                    <td><label>Address: <span id="rightadd"></span></label></td>
+                </tr>
+                <tr>
+                    <td><label>Course: <span id="rightcourse"></span></label></td>
+                </tr>
+                <tr>
+                    <td><label>Selected Subjects: <span id="rightsubject"></span></label></td>
+                </tr>
+                <tr>
+                    <td><label>Submission Date: <span id="rightdate"></span></label></td>
+                </tr>
+            </table>   <!--End of Table-->
+        </div>   <!--End of output table-->
+</div>
+<script src="js/script.js"></script>   <!--External JS-->
+</body>
+</html>
